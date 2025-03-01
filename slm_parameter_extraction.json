@@ -48,16 +48,16 @@
         "extracted_parameter": "distribution hub in Los Angeles"
     },
     {
-        "prompt": "Calculate the quickest way to the nearest logistics checkpoint.",
-        "extracted_parameter": "nearest logistics checkpoint"
+        "prompt": "Calculate the quickest way to the logistics checkpoint 7.",
+        "extracted_parameter": "logistics checkpoint 7"
     },
     {
         "prompt": "What\u2019s the most efficient way to get to the offshore supply station?",
         "extracted_parameter": "offshore supply station"
     },
     {
-        "prompt": "Navigate to the high-speed drone launch site in Phoenix as quickly as possible.",
-        "extracted_parameter": "high-speed drone launch site in Phoenix"
+        "prompt": "Navigate to the drone launch site in Phoenix as quickly as possible.",
+        "extracted_parameter": "drone launch site in Phoenix"
     },
     {
         "prompt": "How do I reach the emergency relief warehouse in Atlanta in the shortest time?",
@@ -76,7 +76,7 @@
         "extracted_parameter": "production facility in San Diego"
     },
     {
-        "prompt": "Plan the shortest path to the maintenance station near Las Vegas.",
-        "extracted_parameter": "maintenance station near Las Vegas"
+        "prompt": "Plan the shortest path to the maintenance station in Las Vegas.",
+        "extracted_parameter": "maintenance station in Las Vegas"
     }
 ]
