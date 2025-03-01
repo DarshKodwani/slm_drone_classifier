@@ -1,0 +1,82 @@
+[
+    {
+        "prompt": "What\u2019s the quickest way to get to the distribution center in Seattle?",
+        "extracted_parameter": "distribution center in Seattle"
+    },
+    {
+        "prompt": "Find the fastest path to Warehouse 42 in San Francisco, avoiding bad weather.",
+        "extracted_parameter": "Warehouse 42 in San Francisco"
+    },
+    {
+        "prompt": "How do I reach the downtown logistics hub as quickly as possible?",
+        "extracted_parameter": "downtown logistics hub"
+    },
+    {
+        "prompt": "Get me the shortest route to the supply depot in Denver.",
+        "extracted_parameter": "supply depot in Denver"
+    },
+    {
+        "prompt": "Calculate the fastest route to the main storage facility in Houston.",
+        "extracted_parameter": "main storage facility in Houston"
+    },
+    {
+        "prompt": "Find the best way to reach Factory 8 in Detroit while minimizing energy usage.",
+        "extracted_parameter": "Factory 8 in Detroit"
+    },
+    {
+        "prompt": "I need the quickest route to the airport cargo terminal.",
+        "extracted_parameter": "airport cargo terminal"
+    },
+    {
+        "prompt": "Determine the fastest way to get to the emergency response center in Miami.",
+        "extracted_parameter": "emergency response center in Miami"
+    },
+    {
+        "prompt": "Find an optimized route to Data Center 5 in Austin.",
+        "extracted_parameter": "Data Center 5 in Austin"
+    },
+    {
+        "prompt": "What\u2019s the best route to the freight hub in Chicago considering current traffic?",
+        "extracted_parameter": "freight hub in Chicago"
+    },
+    {
+        "prompt": "Guide me on the shortest way to the robotics assembly plant in New York.",
+        "extracted_parameter": "robotics assembly plant in New York"
+    },
+    {
+        "prompt": "Give me the fastest route to our distribution hub in Los Angeles.",
+        "extracted_parameter": "distribution hub in Los Angeles"
+    },
+    {
+        "prompt": "Calculate the quickest way to the nearest logistics checkpoint.",
+        "extracted_parameter": "nearest logistics checkpoint"
+    },
+    {
+        "prompt": "What\u2019s the most efficient way to get to the offshore supply station?",
+        "extracted_parameter": "offshore supply station"
+    },
+    {
+        "prompt": "Navigate to the high-speed drone launch site in Phoenix as quickly as possible.",
+        "extracted_parameter": "high-speed drone launch site in Phoenix"
+    },
+    {
+        "prompt": "How do I reach the emergency relief warehouse in Atlanta in the shortest time?",
+        "extracted_parameter": "emergency relief warehouse in Atlanta"
+    },
+    {
+        "prompt": "Find me the fastest way to the temporary storage site in Dallas.",
+        "extracted_parameter": "temporary storage site in Dallas"
+    },
+    {
+        "prompt": "Determine the quickest route to the central command center in Washington.",
+        "extracted_parameter": "central command center in Washington"
+    },
+    {
+        "prompt": "Which is the fastest route to the production facility in San Diego?",
+        "extracted_parameter": "production facility in San Diego"
+    },
+    {
+        "prompt": "Plan the shortest path to the maintenance station near Las Vegas.",
+        "extracted_parameter": "maintenance station near Las Vegas"
+    }
+]
