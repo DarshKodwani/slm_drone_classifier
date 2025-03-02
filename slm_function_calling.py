@@ -74,9 +74,13 @@ for prompt, true_function in test_prompts:
     predicted_function, time_per_token = classify_function(prompt)
     time_per_token_list.append(time_per_token)
 
+    # Strict exact match
+    is_exact_match = predicted_function.strip().lower() == true_function.strip().lower()
+
     print(f"Prompt: {prompt}")
     print(f"True Function: {true_function}")
     print(f"Predicted Function: {predicted_function}")
+    print(f"Exact Match: {'✅' if is_exact_match else '❌'}")
     print(f"Time per Token: {time_per_token:.6f} seconds\n")
 
     if predicted_function == true_function:
