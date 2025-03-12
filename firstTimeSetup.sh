@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Step 1: Delete existing virtual environment if it exists
-VENV_DIR="qat-env"
+VENV_DIR="venv"
 if [ -d "$VENV_DIR" ]; then
     echo "Removing existing virtual environment..."
     rm -rf "$VENV_DIR"
