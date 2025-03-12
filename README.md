@@ -18,8 +18,7 @@ This repository contains code for the SLM Drone Classifier project. The goal of 
 
 1. Run the firstTimeSetup bash script:
     ```bash
-    ./firstTimeSetup.sho
-    cd slm_drone_classifier
+    ./firstTimeSetup.sh
     ```
 
 ### Running the Scripts
