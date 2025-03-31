@@ -4,7 +4,7 @@ import json
 import numpy as np
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-MODEL_NAME = "google/flan-t5-large"  # Using Flan-T5
+MODEL_NAME = "google/flan-t5-large"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
 
@@ -20,36 +20,27 @@ def classify_function(prompt):
     system_prompt = f"You are an AI assistant that maps user prompts to function names. Choose from: {', '.join(FUNCTION_NAMES)}."
     input_text = f"{system_prompt}\nUser: {prompt}\nAssistant:"
 
-    # Tokenize input
     inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
 
-    # Start time for inference
     start_time = time.time()
 
-    # Generate response
     with torch.no_grad():
         outputs = model.generate(**inputs, max_length=100)
 
-    # End time for inference
     end_time = time.time()
 
-    # Calculate time taken
     total_time = end_time - start_time
 
-    # Decode model output
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    # Extract function name from response
     predicted_function = "Unknown function"
     for function in FUNCTION_NAMES:
         if function in response:
             predicted_function = function
             break
 
-    # Count number of tokens in response
     num_tokens_generated = outputs.shape[1]
 
-    # Compute time per token
     time_per_token = total_time / num_tokens_generated if num_tokens_generated > 0 else 0
 
     return predicted_function, time_per_token
