@@ -27,9 +27,7 @@ def classify_function(prompt):
     with torch.no_grad():
         outputs = model.generate(**inputs, max_length=100)
 
-    end_time = time.time()
-
-    total_time = end_time - start_time
+    inference_time = end_time - time.time()
 
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
@@ -41,7 +39,7 @@ def classify_function(prompt):
 
     num_tokens_generated = outputs.shape[1]
 
-    time_per_token = total_time / num_tokens_generated if num_tokens_generated > 0 else 0
+    time_per_token = inference_time / num_tokens_generated if num_tokens_generated > 0 else 0
 
     return predicted_function, time_per_token
 
